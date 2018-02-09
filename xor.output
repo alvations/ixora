@@ -1,3 +1,4 @@
+Activation Criterion Optimizer HiddenDim LearnRate Epochs PercentCorrect PercentWrong TimeTaken
 ReLU	L1Loss	Adadelta	5	1.0	10	0	100	1.6853687763214111
 ReLU	L1Loss	Adagrad	5	1.0	10	5	95	1.1305415630340576
 ReLU	L1Loss	Adam	5	1.0	10	3	97	1.1305279731750488
