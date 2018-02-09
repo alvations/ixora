@@ -46,7 +46,7 @@ Criterions = [L1Loss, MSELoss,
 
 Optimizers = [Adadelta, Adagrad, Adam, Adamax,
              ASGD, RMSprop, Rprop]
-             
+
 
 X = xor_input = np.array([[0,0], [0,1], [1,0], [1,1]])
 Y = xor_output = np.array([[0,1,1,0]]).T
@@ -96,4 +96,3 @@ for hidden_dim, lr, epochs, Activation, Criterion, Optimizer in product(hidden_d
     tf, outputsss, losses__ = zip(*all_results)
     a_name, c_name, o_name = str(Activation).rpartition('.')[2][:-2], str(Criterion).rpartition('.')[2][:-2], str(Optimizer).rpartition('.')[2][:-2]
     print('\t'.join(map(str, [a_name, c_name, o_name, hidden_dim, lr, epochs, Counter(tf)[True], Counter(tf)[False], time.time()-start ])), flush=True)
-
